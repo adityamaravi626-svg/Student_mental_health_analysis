@@ -1,37 +1,86 @@
-# Student Mental Health Analysis
+# 🧠 Student Mental Health Analytics
 
-## Project Overview
+An end-to-end Data Analytics project that explores the relationship between students' mental health and academic performance using **Python**, **MySQL**, and **Power BI**. The project demonstrates the complete analytics workflow, including data cleaning, exploratory data analysis (EDA), SQL querying, and interactive dashboard development.
 
-This project analyzes student mental health using Python, SQL, and Power BI.
+---
 
-## Tools Used
+## 📌 Project Objective
 
-- Python
-- SQL
-- Power BI
-- Pandas
-- NumPy
+The objective of this project is to analyze student mental health data to identify patterns related to depression, anxiety, panic attacks, and academic performance. The project aims to provide meaningful insights through data visualization and interactive dashboards that can support data-driven decision-making in educational institutions.
 
-## Objectives
+---
 
-- Analyze stress levels
-- Identify factors affecting mental health
-- Create an interactive dashboard
+## 🎯 Objectives
 
-## Dashboard
+- Analyze the demographic distribution of students by gender, course, and year of study.
+- Examine the prevalence of depression, anxiety, panic attacks, and specialist treatment among students.
+- Compare academic performance (CGPA) across different student groups.
+- Perform data cleaning and exploratory data analysis using Python.
+- Write SQL queries to extract analytical insights.
+- Build an interactive Power BI dashboard for data visualization.
 
-(Add screenshot)
+---
 
-## Key Insights
+## 📂 Dataset Information
 
-- Students sleeping less than 6 hours reported higher stress.
-- Academic pressure showed a positive correlation with anxiety.
-- Female students reported slightly higher stress levels.
+The dataset contains information about students, including:
 
-## Project Structure
+- Gender
+- Age
+- Course
+- Year of Study
+- CGPA
+- Marital Status
+- Depression Status
+- Anxiety Status
+- Panic Attack Status
+- Specialist Treatment Status
 
-Dataset/
-SQL/
-Python/
-Dashboard/
-Images/
+---
+
+## 🛠️ Tools & Technologies
+
+- **Python**
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
+- **MySQL**
+- **Power BI**
+- **Google Colab**
+
+---
+
+## 📊 Dashboard Features
+
+- Executive Overview
+- Student Demographics Analysis
+- Mental Health Analysis
+- Academic Performance Analysis
+- Interactive KPI Cards
+- Dynamic Filters (Slicers)
+- Course-wise Analysis
+- Gender-wise Analysis
+
+---
+
+## 🔍 Key Insights
+
+- Identified the distribution of students across different courses, genders, and academic years.
+- Analyzed the proportion of students reporting depression, anxiety, panic attacks, and specialist treatment.
+- Compared average CGPA across different courses and demographic groups.
+- Explored the relationship between mental health indicators and academic performance.
+- Developed an interactive dashboard that allows users to filter insights by gender, course, and study year.
+
+---
+
+## 📈 Project Workflow
+
+1. Data Collection
+2. Data Cleaning (Python)
+3. Exploratory Data Analysis (EDA)
+4. SQL Analysis (MySQL)
+5. Interactive Dashboard Development (Power BI)
+6. Business Insights & Reporting
+
+---
