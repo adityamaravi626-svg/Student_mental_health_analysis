@@ -1,0 +1,144 @@
+SELECT COUNT(*) AS total_students
+FROM student_mental_health;
+
+SELECT ROUND(AVG(age),2) AS Average_Age 
+FROM student_mental_health;  
+
+SELECT ROUND(AVG(what_is_your_cgpa),2) AS Average_CGPA
+FROM student_mental_health;  
+
+SELECT
+choose_your_gender,
+COUNT(*) AS Total
+FROM student_mental_health
+GROUP BY choose_your_gender;
+
+SELECT
+what_is_your_course,
+COUNT(*) AS Total
+FROM student_mental_health
+GROUP BY what_is_your_course
+ORDER BY Total DESC;
+
+SELECT
+your_current_year_of_study,
+COUNT(*) AS Total
+FROM student_mental_health
+GROUP BY your_current_year_of_study;
+
+SELECT marital_status,
+COUNT(*) AS students
+FROM student_mental_health
+GROUP BY marital_status;
+
+SELECT do_you_have_depression, 
+COUNT(*) AS students
+FROM student_mental_health
+GROUP BY do_you_have_depression;
+
+SELECT do_you_have_anxiety, 
+COUNT(*) AS students
+FROM student_mental_health
+GROUP BY do_you_have_anxiety;
+
+SELECT do_you_have_panic_attack, 
+COUNT(*) AS students
+FROM student_mental_health
+GROUP BY do_you_have_panic_attack;
+
+SELECT what_is_your_course, ROUND(AVG(what_is_your_cgpa),2) AS Avg_CGPA
+FROM student_mental_health
+GROUP BY what_is_your_course 
+ORDER BY Avg_CGPA DESC;  
+
+SELECT choose_your_gender, ROUND(AVG(what_is_your_cgpa),2) AS Avg_CGPA
+FROM student_mental_health
+GROUP BY choose_your_gender;
+
+SELECT
+what_is_your_course,
+ROUND(AVG(age),2) AS Avg_Age
+FROM student_mental_health
+GROUP BY what_is_your_course;
+
+SELECT
+do_you_have_depression,
+ROUND(AVG(what_is_your_cgpa),2) AS Avg_CGPA
+FROM student_mental_health
+GROUP BY do_you_have_depression; 
+
+
+SELECT
+do_you_have_anxiety,
+ROUND(AVG(what_is_your_cgpa),2) AS Avg_CGPA
+FROM student_mental_health
+GROUP BY do_you_have_anxiety; 
+
+SELECT
+do_you_have_depression,
+ROUND(AVG(age),2) AS Avg_Age
+FROM student_mental_health
+GROUP BY do_you_have_depression; 
+
+SELECT * 
+FROM student_mental_health
+WHERE do_you_have_depression = 'Yes'
+AND do_you_have_anxiety = 'Yes';
+
+SELECT *
+FROM student_mental_health
+WHERE do_you_have_depression='Yes'
+AND do_you_have_anxiety='Yes'
+AND do_you_have_panic_attack='Yes';  
+
+SELECT * FROM student_mental_health;
+
+SELECT 
+what_is_your_course,
+what_is_your_cgpa
+FROM student_mental_health
+ORDER BY what_is_your_cgpa DESC
+LIMIT 10; 
+
+
+SELECT
+what_is_your_course,
+what_is_your_cgpa,
+RANK() OVER(ORDER BY what_is_your_cgpa DESC) AS Rank_CGPA
+FROM student_mental_health;
+
+SELECT
+what_is_your_course,
+what_is_your_cgpa,
+RANK() OVER(
+PARTITION BY what_is_your_course
+ORDER BY what_is_your_cgpa DESC
+) AS Course_Rank
+FROM student_mental_health;
+
+WITH CourseAverage AS
+(
+SELECT
+what_is_your_course,
+AVG(what_is_your_cgpa) AS Avg_CGPA
+FROM student_mental_health
+GROUP BY what_is_your_course
+)
+
+SELECT *
+FROM CourseAverage
+ORDER BY Avg_CGPA DESC; 
+
+
+CREATE VIEW High_Risk_Students AS
+
+SELECT *
+FROM student_mental_health
+WHERE do_you_have_depression='Yes'
+AND do_you_have_anxiety='Yes'; 
+SELECT *
+FROM High_Risk_Students;
+
+
+ 
+ 
