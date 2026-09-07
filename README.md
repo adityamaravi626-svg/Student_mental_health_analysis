@@ -1,16 +1,16 @@
-# 🧠 Student Mental Health Analytics
+#  Student Mental Health Analytics
 
 An end-to-end Data Analytics project that explores the relationship between students' mental health and academic performance using **Python**, **MySQL**, and **Power BI**. The project demonstrates the complete analytics workflow, including data cleaning, exploratory data analysis (EDA), SQL querying, and interactive dashboard development.
 
 ---
 
-## 📌 Project Objective
+##  Project Objective
 
 The objective of this project is to analyze student mental health data to identify patterns related to depression, anxiety, panic attacks, and academic performance. The project aims to provide meaningful insights through data visualization and interactive dashboards that can support data-driven decision-making in educational institutions.
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Analyze the demographic distribution of students by gender, course, and year of study.
 - Examine the prevalence of depression, anxiety, panic attacks, and specialist treatment among students.
@@ -21,7 +21,7 @@ The objective of this project is to analyze student mental health data to identi
 
 ---
 
-## 📂 Dataset Information
+##  Dataset Information
 
 The dataset contains information about students, including:
 
@@ -38,7 +38,7 @@ The dataset contains information about students, including:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Python**
   - Pandas
@@ -51,7 +51,7 @@ The dataset contains information about students, including:
 
 ---
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 - Executive Overview
 - Student Demographics Analysis
@@ -64,7 +64,7 @@ The dataset contains information about students, including:
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 - Identified the distribution of students across different courses, genders, and academic years.
 - Analyzed the proportion of students reporting depression, anxiety, panic attacks, and specialist treatment.
@@ -74,7 +74,7 @@ The dataset contains information about students, including:
 
 ---
 
-## 📈 Project Workflow
+## Project Workflow
 
 1. Data Collection
 2. Data Cleaning (Python)
